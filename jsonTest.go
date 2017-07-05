@@ -1,10 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"encoding/json"
+	"fmt"
+)
 
-import "encoding/json"
-
-func main() {
+func test() {
+	/*    Name string `json:"msg_name"`       // 对应JSON的msg_name
+	Body string `json:"body,omitempty"` // 如果为空置则忽略字段
+	Time int64  `json:"-"`              // 直接忽略字段
+	*/
 	str := `{
 		"a" : "44",
 		"b" : "heh",
